@@ -16,7 +16,7 @@ namespace SampleService.Startup
             _container = new UnityContainer();
 
             // Register IDbConnection with a transient lifetime using RegisterFactory
-            _container.RegisterFactory<IDbConnection>(c => new SqlConnection("SQL Connection String"), new TransientLifetimeManager());
+            _container.RegisterFactory<IDbConnection>(c => new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\SRINATHTHANGARATHINA\\Documents\\CustomisationDB.mdf;Integrated Security=True;Connect Timeout=30"), new TransientLifetimeManager());
 
             _container.RegisterType<IDataAccess, DataAccess>();
 

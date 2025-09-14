@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Unity;
 using Unity.Lifetime;
+using SampleService; // Ensure this namespace is included
 
 namespace SampleService.Startup
 {
@@ -14,12 +15,9 @@ namespace SampleService.Startup
         {
             _container = new UnityContainer();
 
-            // Register IDbConnection with a transient lifetime  
-            _container.RegisterType<IDbConnection>(
-                new TransientLifetimeManager(),
-                factory => new SqlConnection("YourConnectionStringHere"));
+            // Register IDbConnection with a transient lifetime using RegisterFactory
+            _container.RegisterFactory<IDbConnection>(c => new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\SRINATHTHANGARATHINA\\Documents\\CustomisationDB.mdf;Integrated Security=True;Connect Timeout=30"), new TransientLifetimeManager());
 
-            // Register other dependencies  
             _container.RegisterType<IDataAccess, DataAccess>();
 
             return _container;

@@ -31,18 +31,20 @@ namespace SampleService
                 using (IDbCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = "SELECT * FROM UserAttributes WHERE CustomerNo = @CustomerNo";
+                    cmd.CommandType = CommandType.Text;
                     IDbDataParameter userIdParam = cmd.CreateParameter();
                     userIdParam.ParameterName = "@CustomerNo";
                     userIdParam.Value = input.CustomerNumber;
+                    userIdParam.DbType = DbType.String;
                     cmd.Parameters.Add(userIdParam);
                     using (IDataReader reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            string startPage = reader.GetString(0);
-                            string themeChosen = reader.GetString(1);
-                            string memberGreeting = reader.GetString(2);
-                            string customerOnboaringstatus = reader.GetString(3);
+                            string startPage = reader.GetString(2);
+                            string themeChosen = reader.GetString(3);
+                            string memberGreeting = reader.GetString(4);
+                            string customerOnboaringstatus = reader.GetString(5);
                             userAttributesOutput.StartPage = startPage;
                             userAttributesOutput.ThemeChosen = themeChosen;
                             userAttributesOutput.MemberGreeting = memberGreeting;

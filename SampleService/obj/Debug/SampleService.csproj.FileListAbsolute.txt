@@ -25,3 +25,15 @@ C:\Users\SRINATHTHANGARATHINA\source\repos\SampleWCFService\SampleService\obj\De
 C:\Users\SRINATHTHANGARATHINA\source\repos\SampleWCFService\SampleService\obj\Debug\SampleSe.2D2576D4.Up2Date
 C:\Users\SRINATHTHANGARATHINA\source\repos\SampleWCFService\SampleService\obj\Debug\SampleService.dll
 C:\Users\SRINATHTHANGARATHINA\source\repos\SampleWCFService\SampleService\obj\Debug\SampleService.pdb
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\SampleService.dll.config
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\SampleService.dll
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\SampleService.pdb
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\SamplePfw.dll
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\Unity.Abstractions.pdb
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\bin\Debug\Unity.Container.pdb
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\obj\Debug\SampleService.csproj.AssemblyReference.cache
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\obj\Debug\SampleService.csproj.CoreCompileInputs.cache
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\obj\Debug\SampleSe.2D2576D4.Up2Date
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\obj\Debug\SampleService.dll
+C:\Users\SRINATHTHANGARATHINA\Source\Repos\SampleWCF\SampleService\obj\Debug\SampleService.pdb
